@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookSky Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>BOOKSKY</h1>
+    </div>
+    <div class="container">
+      <div class="book-cointainer">
+        <h2>Rich Dad</h2>
+        <h5>Robert</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+          molestias officiis error! Ipsa hic temporibus distinctio deserunt
+          quaerat corporis in consequuntur sed ut, atque vel, debitis sequi
+          corrupti enim unde.
+        </p>
+        <button onclick="deleting(event)">Delete</button>
+      </div>
+    </div>
+    <div class="popupOverlay" id="overlay"></div>
+    <div class="popupDetail" id="detail">
+      <h2>Add Book</h2>
+      <form>
+        <input type="text" placeholder="Book Title" id="titleVal" />
+        <input type="text" placeholder="Book Author" id="authorVal" />
+        <textarea
+          placeholder="Short DEscription"
+          id="descriptionVal"
+        ></textarea>
+        <button id="addBtn">Add</button>
+        <button id="cancelBtn">cancel</button>
+      </form>
+    </div>
+    <button class="plusBtn" id="plusBtn">+</button>
+    <script src="app.js"></script>
+  </body>
+</html>
